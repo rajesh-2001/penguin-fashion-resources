@@ -13,6 +13,9 @@
         .font-babas{
             font-family: "Bebas Neue"
         }
+        .font-roboto{
+            font-family: "Roboto";
+        }
     </style>
 </head>
 <body>
@@ -31,7 +34,7 @@
         </nav>
 
         <!--Banner-->
-        <div class="flex flex-column justify-between mx-32 mt-5 ">
+        <div class="flex flex-col mx-2  md:flex-row justify-between md:mx-32 mt-5 ">
             <div class="mt-24">
                 <p class="text-6xl uppercase font-babas"><span class="text-[#FABE4C]">Be the Penguins</span> <br><span class="text-[#363958]">of Winter</span></p>
 
@@ -52,63 +55,122 @@
     </header>
  
     <!--Body Part-->
-    <main class="hidden">
-        <!--Body Part1-->
+    <main class="md:mx-32 my-6">
         <div class="">
-            <p>WOMEN JACKET</p>
-            <div class="flex flex-column">
-                <div>
-                    <img src="images/jacket-1.png" alt="">
-                    <p>Yellow Coat Jacket</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit minus rem cupiditate.</p>
-                    <p>234$</p>
-                    <button>BUY NOW</button>
+            <!--Body Part1-->
+            <div>
+                <p class="font-babas text-4xl normal mb-5">WOMEN JACKET</p>
+                <div class="grid grid-flow-row md:grid-flow-col gap-6 rounded-2xl">
+                <!--Cart1-->
+                <div class="bg-white p-5 rounded-3xl drop-shadow-lg">
+                    <div class="bg-[#F1F1F1] rounded-2xl pt-5 pb-3 mb-6 justify-end">
+                        <img src="images/jacket-1.png" class="size-60 block border-dashed ">
+                    </div>
+                    <p class="font-roboto text-xl font-bold mb-3">Yellow Coat Jacket</p>
+                    <p class="font-roboto text-base font-normal text-[#3E3E3E]mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit minus rem cupiditate.</p>
+    
+                    <div class="flex justify-between font-roboto">
+                        <p class="text-4xl font-extrabold text-[#FABE4C] items-center">234$</p>
+                        <button class="text-base text-white font-medium rounded-xl px-7 py-4 bg-gradient-to-r from-[#A4BC46] to-[#85A019] flex justify-around">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 pr-1">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                              </svg>
+                            BUY NOW</button>
+                    </div>
                 </div>
-                <div>
-                    <img src="images/jacket-2.png" alt="">
-                    <p>Ladies Jacket</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit minus rem cupiditate.</p>
-                    <p>234$</p>
-                    <button>BUY NOW</button>
+                <!--Cart2-->
+                <div class="bg-white p-5 rounded-2xldrop-shadow-lg ">
+                    <div class="bg-[#F1F1F1] rounded-2xl pt-5 pb-3 mb-6">
+                        <img src="images/jacket-2.png" class="size-60 block border-dashed">
+                    </div>
+                    <p class="font-roboto text-xl font-bold mb-3">Yellow Coat Jacket</p>
+                    <p class="font-roboto text-base font-normal text-[#3E3E3E]mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit minus rem cupiditate.</p>
+    
+                    <div class="flex justify-between font-roboto">
+                        <p class="text-4xl font-extrabold text-[#FABE4C] items-center">234$</p>
+                        <button class="text-base text-white font-medium rounded-xl px-7 py-4 bg-gradient-to-r from-[#A4BC46] to-[#85A019] flex justify-around">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 pr-1">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                              </svg>
+                            BUY NOW</button>
+                    </div>
                 </div>
-                <div>
-                    <img src="images/jacket-3.png" alt="">
-                    <p>Women Lather Jacket</p>
-                    p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit minus rem cupiditate.</p>
-                    <p>234$</p>
-                    <button>BUY NOW</button>
+                <!--Cart3-->
+                <div class="bg-white p-5 rounded-2xl drop-shadow-lg">
+                    <div class="bg-[#F1F1F1] rounded-2xl pt-5 pb-3 mb-6">
+                        <img src="images/jacket-3.png" class="size-60 block border-dashed">
+                    </div>
+                    <p class="font-roboto text-xl font-bold mb-3">Yellow Coat Jacket</p>
+                    <p class="font-roboto text-base font-normal text-[#3E3E3E]mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit minus rem cupiditate.</p>
+    
+                    <div class="flex justify-between font-roboto">
+                        <p class="text-4xl font-extrabold text-[#FABE4C] items-center">234$</p>
+                        <button class="text-base text-white font-medium rounded-xl px-7 py-4 bg-gradient-to-r from-[#A4BC46] to-[#85A019] flex justify-around">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 pr-1">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                              </svg>
+                            BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+            <!--Body Part2-->
+            <div class="mt-5">
+                <p class="font-babas text-4xl normal mb-5">MEN JACKET</p>
+                <div class="grid grid-flow-col gap-6 rounded-2xl">
+                <!--Cart1-->
+                <div class="bg-white p-5 rounded-3xl drop-shadow-lg">
+                    <div class="bg-[#F1F1F1] rounded-2xl pt-5 pb-3 mb-6 justify-end">
+                        <img src="images/jacket-4.png" class="size-60 block border-dashed ">
+                    </div>
+                    <p class="font-roboto text-xl font-bold mb-3">Yellow Coat Jacket</p>
+                    <p class="font-roboto text-base font-normal text-[#3E3E3E]mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit minus rem cupiditate.</p>
+    
+                    <div class="flex justify-between font-roboto">
+                        <p class="text-4xl font-extrabold text-[#FABE4C] items-center">234$</p>
+                        <button class="text-base text-white font-medium rounded-xl px-7 py-4 bg-gradient-to-r from-[#A4BC46] to-[#85A019] flex justify-around">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 pr-1">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                              </svg>
+                            BUY NOW</button>
+                    </div>
+                </div>
+                <!--Cart2-->
+                <div class="bg-white p-5 rounded-2xldrop-shadow-lg ">
+                    <div class="bg-[#F1F1F1] rounded-2xl pt-5 pb-3 mb-6">
+                        <img src="images/jacket-5.png" class="size-60 block border-dashed">
+                    </div>
+                    <p class="font-roboto text-xl font-bold mb-3">Yellow Coat Jacket</p>
+                    <p class="font-roboto text-base font-normal text-[#3E3E3E]mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit minus rem cupiditate.</p>
+    
+                    <div class="flex justify-between font-roboto">
+                        <p class="text-4xl font-extrabold text-[#FABE4C] items-center">234$</p>
+                        <button class="text-base text-white font-medium rounded-xl px-7 py-4 bg-gradient-to-r from-[#A4BC46] to-[#85A019] flex justify-around">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 pr-1">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                              </svg>
+                            BUY NOW</button>
+                    </div>
+                </div>
+                <!--Cart3-->
+                <div class="bg-white p-5 rounded-2xl drop-shadow-lg">
+                    <div class="bg-[#F1F1F1] rounded-2xl pt-5 pb-3 mb-6">
+                        <img src="images/jacket-6.png" class="size-60 block border-dashed">
+                    </div>
+                    <p class="font-roboto text-xl font-bold mb-3">Yellow Coat Jacket</p>
+                    <p class="font-roboto text-base font-normal text-[#3E3E3E]mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit minus rem cupiditate.</p>
+    
+                    <div class="flex justify-between font-roboto">
+                        <p class="text-4xl font-extrabold text-[#FABE4C] items-center">234$</p>
+                        <button class="text-base text-white font-medium rounded-xl px-7 py-4 bg-gradient-to-r from-[#A4BC46] to-[#85A019] flex justify-around">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 pr-1">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                              </svg>
+                            BUY NOW</button>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!--Body Part2-->
-        <div>
-            <p>MEN JACKET</p>
-            <div class="flex flex-column">
-                <div>
-                    <img src="images/jacket-4.png" alt="">
-                    <p>Snowboard Jacket Mens</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit minus rem cupiditate.</p>
-                    <p>234$</p>
-                    <button>BUY NOW</button>
-                </div>
-                <div>
-                    <img src="images/jacket-5.png" alt="">
-                    <p>Man Leather Jackets</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit minus rem cupiditate.</p>
-                    <p>234$</p>
-                    <button>BUY NOW</button>
-                </div>
-                <div>
-                    <img src="images/jacket-6.png" alt="">
-                    <p>Man Casual Jackets</p>
-                    p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit minus rem cupiditate.</p>
-                    <p>234$</p>
-                    <button>BUY NOW</button>
-                </div>
-            </div>
-        </div>
-
+        
     </main>
     <!--Footer-->
     <footer>
